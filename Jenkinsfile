@@ -1,24 +1,15 @@
-pipeline {
-    agent any
+node {
 
-    stages {
-
-        stage('Checkout') {
-            steps {
-                echo 'Executing Checkout Stage'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Executing Build Stage'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Executing Test Stage'
-            }
-        }
+    stage('Checkout') {
+        echo 'Executing Checkout Stage'
     }
+
+    stage('Build') {
+        echo 'Executing Build Stage'
+    }
+
+    stage('Test') {
+        echo 'Executing Test Stage'
+    }
+
 }
